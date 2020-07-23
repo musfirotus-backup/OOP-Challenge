@@ -78,28 +78,12 @@ class Auth {
         console.log(`Login terakhir :`, this.status === true ? new Date().toLocaleString() : this.date);
     }
 }
-let refactory = new Auth("HomeVase", "111", data);
-refactory.login();
-refactory.validate();
-refactory.logout();
-refactory.user();
-refactory.id();
-refactory.check();
-refactory.guest();
-refactory.lastLogin();
-// refactory.id(2);
-
-// Auth.login({
-//     username: 'root',
-//     password: 'secret'
-// })
-// Auth.validate({
-//     username: 'root',
-//     password: 'secret'
-// })
-// Auth.logout()
-// Auth.user()
-// Auth.id()
-// Auth.check()
-// Auth.guest()
-// Auth.lastLogin()
+let auth = new Auth("HomeVase", "111", data);
+auth.login();
+auth.validate();
+auth.logout();
+auth.user();
+auth.id();
+auth.check();
+auth.guest();
+auth.lastLogin();
